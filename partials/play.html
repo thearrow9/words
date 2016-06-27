@@ -96,19 +96,6 @@ $(document).ready(function() {
     var bonus;
     var isMimics;
 
-
-    $.ajax({
-      method: "GET",
-      url: "http://vily79.com/words/?language_id=1",
-      data: { name: "John", location: "Boston", words: 3 },
-      dataType: 'jsonp',
-    })
-    .done(function( msg ) {
-      console.log( msg );
-    });
-
-
-
     $('input', $txt).on('click', function() {
       runRound();
     });
